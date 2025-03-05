@@ -1,0 +1,37 @@
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .primary-btn {
+    background: orange;
+    color: white;
+  }
+  
+  .primary-btn:hover {
+    background: darkorange;
+  }
+  
+  .secondary-btn {
+    background: black;
+    color: white;
+  }
+  
+  .secondary-btn:hover {
+    background: grey;
+  }
+  
+  .danger-btn {
+    background: red;
+    color: white;
+  }
+  
+  .danger-btn:hover {
+    background: darkred;
+  }
+  

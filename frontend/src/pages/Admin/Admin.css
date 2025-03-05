@@ -1,0 +1,153 @@
+/* General Container Styling */
+.admin-container, .admin-dashboard, .reports-container {
+  max-width: 800px; 
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+}
+
+/* Approve Professionals Container */
+.approve-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Enables horizontal scrolling on smaller screens */
+}
+
+/* Center the Table */
+.professionals-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+/* Table Styling */
+.professionals-table th, 
+.professionals-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.professionals-table th {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+}
+
+.professionals-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.professionals-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button Styling */
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: orange;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkorange;
+}
+
+/* Success Message */
+.success-message {
+  color: green;
+  font-weight: bold;
+  background: #eaffea;
+  border: 1px solid #4CAF50;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-weight: bold;
+  background: #ffeaea;
+  border: 1px solid #ff4d4d;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style Document Links to Appear on Separate Lines */
+.document-links a {
+  display: block; /* Forces each link to appear on a new line */
+  margin-bottom: 5px;
+  color: blue;
+  text-decoration: none;
+}
+
+.document-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .approve-container {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .professionals-table th, .professionals-table td {
+    padding: 10px;
+    font-size: 14px; /* Reduce font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .approve-container {
+    padding: 10px;
+  }
+
+  .professionals-table {
+    width: 100%;
+    display: block;
+    overflow-x: auto; /* Allows scrolling on small screens */
+  }
+
+  .professionals-table th, 
+  .professionals-table td {
+    font-size: 12px; /* Reduce font size for smaller screens */
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .approve-container {
+    padding: 8px;
+  }
+
+  .professionals-table th, 
+  .professionals-table td {
+    font-size: 11px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
